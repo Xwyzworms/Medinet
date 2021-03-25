@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/ivKeranjangObat"
+                android:id="@+id/ivRiwayatObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -29,7 +29,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvKeranjangJudulObat"
+                android:id="@+id/tvRiwayatJudulObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -37,29 +37,29 @@
                 android:text="IMBOOST FORCE 10 KAPLET"
                 android:textSize="13sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/ivKeranjangObat"
+                app:layout_constraintStart_toEndOf="@+id/ivRiwayatObat"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvKeranjangPenjelasanObat"
+                android:id="@+id/tvRiwayatPenjelasanObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="8dp"
                 android:text="PerStrip"
-                app:layout_constraintStart_toEndOf="@+id/ivKeranjangObat"
-                app:layout_constraintTop_toBottomOf="@+id/tvKeranjangJudulObat" />
+                app:layout_constraintStart_toEndOf="@+id/ivRiwayatObat"
+                app:layout_constraintTop_toBottomOf="@+id/tvRiwayatJudulObat" />
 
 
             <TextView
-                android:id="@+id/tvKeranjangHargaObat"
+                android:id="@+id/tvRiwayatHargaObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:text="RP 80.000"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ivKeranjangObat"
-                app:layout_constraintTop_toBottomOf="@+id/tvKeranjangPenjelasanObat" />
+                app:layout_constraintStart_toEndOf="@+id/ivRiwayatObat"
+                app:layout_constraintTop_toBottomOf="@+id/tvRiwayatPenjelasanObat" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
