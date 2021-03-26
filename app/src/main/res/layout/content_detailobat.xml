@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -60,28 +60,20 @@
                 app:layout_constraintStart_toEndOf="@+id/ivDetailObat"
                 app:layout_constraintTop_toBottomOf="@+id/tvDetailPenjelasanObat" />
 
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_access_time_24"
-                android:layout_marginBottom="5dp"
-                android:layout_marginRight="5dp"
+            <Button
+                android:id="@+id/btnDetailTambahObatRv"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttonround"
+                android:text="Tambah"
+                android:textSize="8sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvDetailHargaObat" />
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailJudulObat" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="17 Mei 2020"
-                android:layout_marginBottom="10dp"
-                android:textColor="@color/backgroundLoginDaftar"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
