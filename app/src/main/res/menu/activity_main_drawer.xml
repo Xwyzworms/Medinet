@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_Top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_beranda" />
+        <item
+            android:id="@+id/nav_obat"
+            android:icon="@drawable/ic_app_iconblack"
+            android:title="@string/menu_Obat" />
+        <item
+            android:id="@+id/nav_biodata"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_Biodata" />
+    </group>
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/riwayat"
+            android:icon="@drawable/ic_baseline_restore_24"
+            android:title="Riwayat Transaksi"/>
+        <item
+            android:id="@+id/Keranjang"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Keranjang"/>
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/keluar"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Keluar"/>
+    </group>
+</menu>
