@@ -20,7 +20,7 @@ class Login_Activity : AppCompatActivity() {
             Toast.makeText(this,"TOLOL",Toast.LENGTH_LONG).show()
             var etMasukEmailtext: String = etMasukEmail.text.toString()
             var etMasukPassword: String = etMasukPassword.text.toString()
-            user = User(etMasukEmailtext, etMasukPassword, "Roy")
+            user = User(etMasukEmailtext, etMasukPassword, "Roy","POP")
 
             if (validate_login(user)) {
                 Toast.makeText(this,"Login Berhasi",Toast.LENGTH_LONG).show()
