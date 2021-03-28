@@ -4,17 +4,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.reyhanabbywahyu.medinet2.R
 import com.reyhanabbywahyu.medinet2.`class`.User
-import kotlinx.android.synthetic.main.activity_login.*
 
 class Login_Activity : AppCompatActivity() {
     lateinit  var user : User
+    lateinit var btnMasuk : Button
+    lateinit var etMasukEmail : EditText
+    lateinit var etMasukPassword: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         Log.d("tikuk","78yiuhj")
+        btnMasuk = findViewById(R.id.btnMasuk)
+        etMasukEmail = findViewById(R.id.etMasukEmail)
+        etMasukPassword = findViewById(R.id.etMasukPassword)
         btnMasuk.setOnClickListener {
             Log.d("tikuk","jkuh")
             Toast.makeText(this,"TOLOL",Toast.LENGTH_LONG).show()

@@ -4,19 +4,34 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.reyhanabbywahyu.medinet2.R
 import com.reyhanabbywahyu.medinet2.`class`.User
-import kotlinx.android.synthetic.main.activity_daftar.*
 
 class Daftar_Activity : AppCompatActivity() {
+    lateinit var etDaftarNama : EditText
+    lateinit var etDaftarEmail : EditText
+    lateinit var etDaftarPassword : EditText
+    lateinit var etDaftarTanggalLahir : EditText
+    lateinit var etDaftarPasswordKonfirmasi : EditText
+    lateinit var btnDaftar : Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_daftar)
+
+        etDaftarNama = findViewById(R.id.etDaftarNama)
+        etDaftarEmail = findViewById(R.id.etDaftarEmail)
+        etDaftarPassword = findViewById(R.id.etDaftarPassword)
+        etDaftarPasswordKonfirmasi = findViewById(R.id.etDaftarPasswordKonfirmasi)
+        etDaftarTanggalLahir = findViewById(R.id.etDaftarTanggalLahir)
+        btnDaftar = findViewById(R.id.btnDaftar)
         btnDaftar.setOnClickListener {
             var user: User? = getData()
             if (user != null) {
-                Log.d("HaloHaloBandung", user.email.toString(),)
 
                 intent = Intent(this, Login_Activity::class.java)
                 startActivity(intent)
