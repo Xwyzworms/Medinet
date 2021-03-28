@@ -1,3 +1,47 @@
 <resources>
-    <string name="app_name">Drug App</string>
+    <string name="app_name">Medinet 2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_riwayat">Riwayat</string>
+
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_Obat">Obat</string>
+    <string name="menu_Biodata">Biodata</string>
+
+    <string name="welcome">Selamat Datang</string>
+    <string name="nama_pengguna">Bambang</string>
+    <string name="saldo_judul">Saldo Kamu</string>
+    <string name="saldoRp">Rp.</string>
+    <string name="saldo_jumlah">100.000</string>
+    <string name="topUp">Top Up</string>
+    <string name="bayar">Bayar</string>
+    <string name="kategor">Kategori Obat</string>
+    <string name="covid_19">Covid-19</string>
+    <string name="demam">Demam</string>
+    <string name="sakitKepala">Sakit Kepala</string>
+    <string name="flu">Flu</string>
+    <string name="maag">Maag</string>
+    <string name="other">Lainnya</string>
+    <string name="rekomendasi">Rekomendasi Obat</string>
+    <string name="imun">Perkuat Imun</string>
+
+    <string name="title_kedaiObat">Kedai Obat</string>
+    <string name="pembuka">Obat apa yang anda cari?</string>
+    <string name="nama_bambang">Bambang Sulistio</string>
+    <string name="email_bambang">bambang.sulis@gmail.com</string>
+    <string name="berat_angka">79</string>
+    <string name="tinggi_angka">165</string>
+    <string name="usia_angka">21</string>
+    <string name="berat_text">Berat</string>
+    <string name="tinggi_text">Tinggi</string>
+    <string name="usia_text">Usia</string>
+    <string name="Biodata_title">Biodata</string>
+    <string name="simpan_perubahan">Simpan Perubahan</string>
+    <string name="RB_laki_laki">Laki-Laki</string>
+    <string name="RB_Perempuan">Perempuan</string>
+    <string name="Akun_title">Akun</string>
+    <string name="personal_tite">Data Personal</string>
 </resources>

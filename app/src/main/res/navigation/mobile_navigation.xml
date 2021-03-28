@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_beranda">
+
+    <fragment
+        android:id="@+id/nav_beranda"
+        android:name="com.reyhanabbywahyu.medinet2.ui.Beranda.BerandaFragment"
+        android:label="@string/menu_beranda"
+        tools:layout="@layout/fragment_beranda" />
+
+    <fragment
+        android:id="@+id/nav_obat"
+        android:name="com.reyhanabbywahyu.medinet2.ui.Obat.ObatFragment"
+        android:label="@string/menu_Obat"
+        tools:layout="@layout/fragment_obat" />
+
+    <fragment
+        android:id="@+id/nav_biodata"
+        android:name="com.reyhanabbywahyu.medinet2.ui.Biodata.BiodataFragment"
+        android:label="@string/menu_Biodata"
+        tools:layout="@layout/fragment_biodata" />
+</navigation>
