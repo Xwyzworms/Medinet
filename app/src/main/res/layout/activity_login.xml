@@ -56,7 +56,6 @@
                 android:textSize="14sp" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etMasukEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="wrap_content"
@@ -70,13 +69,14 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etMasukEmail"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etMasukPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="wrap_content"
@@ -89,6 +89,8 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etMasukPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />

@@ -55,7 +55,6 @@
                 android:textSize="18sp" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarNama"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="44dp"
@@ -69,13 +68,14 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDaftarNama"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarTanggalLahir"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="44dp"
@@ -88,13 +88,14 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDaftarTanggalLahir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="44dp"
@@ -107,13 +108,14 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDaftarEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="44dp"
@@ -126,6 +128,8 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDaftarPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
@@ -133,7 +137,6 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarPasswordKonfirmasi"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
                 android:layout_height="44dp"
@@ -146,6 +149,8 @@
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDaftarPasswordKonfirmasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
