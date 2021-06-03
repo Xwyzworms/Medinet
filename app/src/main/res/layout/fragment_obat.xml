@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/obat"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -74,6 +75,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_Covid"
                     app:cardCornerRadius="35dp"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -102,6 +104,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_Demam"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#8BFA79"
@@ -129,6 +132,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_SakitKepala"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#FCEE73"
@@ -145,7 +149,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/covid_19"
+                    android:text="@string/sakitKepala"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -157,6 +161,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_Flu"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#717FFB"
@@ -185,6 +190,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_Maag"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#F684F9"
@@ -213,6 +219,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_lainnya"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#C4C4C4"
@@ -229,7 +236,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/covid_19"
+                    android:text="Lainnya"
                     android:textColor="@color/black" />
             </LinearLayout>
         </GridLayout>
@@ -246,7 +253,8 @@
             app:layout_constraintTop_toBottomOf="@id/grid_Obat_kategori" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="wrap_content"
+            android:id="@+id/recycler_obat_container"
+            android:layout_width="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

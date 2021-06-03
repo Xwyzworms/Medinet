@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="872a0a47-b913-4ef9-b575-5fcc9e183b41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Selesai_Activity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/class/ObatResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/class/UserResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/drawable/ic_done.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../res/layout/activity_selesai_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/DBHelper/DBHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/DBHelper/DBHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Daftar_Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Daftar_Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Detail_ObatActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Detail_ObatActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Keranjang_Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Keranjang_Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Login_Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Login_Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Toko_Obat_Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/Toko_Obat_Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/UtamaActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/activity/UtamaActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/adapter/KeranjangObatAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/Adapter/KeranjangObatAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/adapter/TokoObatAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/Adapter/TokoObatAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/class/Obat.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/class/User.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/ui/Beranda/BerandaFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/ui/Beranda/BerandaViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/ui/Biodata/BiodataFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/ui/Biodata/BiodataViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/ui/Obat/ObatFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reyhanabbywahyu/medinet2/ui/Obat/ObatViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/border.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/border.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/buttonround.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/buttonround.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_badan_pom.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_badan_pom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_baseline_access_time_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_baseline_access_time_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_baseline_add_circle_outline_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_baseline_arrow_back_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_baseline_arrow_back_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_baseline_remove_circle_outline_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_bersatu_lawan.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_bersatu_lawan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_kemenkes.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_kemenkes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_medi.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_medi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_remove_circle_outline_24px_outlined.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_remove_circle_outline_24px_outlined.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_telu.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_telu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/ic_undraw_medical_care_movn_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/ic_undraw_medical_care_movn_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/icon_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/icon_app.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable-v24/textviewround.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/drawable/textviewround.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/drawable/ic_baseline_add_circle_outline_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_daftar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_daftar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_detail_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_detail_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_keranjang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_keranjang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_riwayat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_riwayat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/activity_toko__obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/activity_toko__obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/content_detail_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/content_detail_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/content_keranjang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/content_keranjang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/fragment_beranda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/fragment_beranda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/fragment_biodata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/fragment_biodata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/layout/fragment_obat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/layout/fragment_obat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1sA8rCHmSYqfGMUeuce9Wd97F37" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../.." />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="872a0a47-b913-4ef9-b575-5fcc9e183b41" name="Default Changelist" comment="" />
+      <created>1620304229846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620304229846</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1620304252673">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1620304252673" />
+  </component>
+</project>

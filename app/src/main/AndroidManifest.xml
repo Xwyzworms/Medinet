@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.reyhanabbywahyu.medinet2">
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+        />
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_app"
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_app"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Medinet2">
-        <activity android:name=".activity.Riwayat_Activity"></activity>
+        <activity android:name=".activity.Selesai_Activity"></activity>
+        <activity android:name=".activity.Riwayat_Activity" />
         <activity android:name=".activity.Login_Activity" />
         <activity android:name=".activity.Keranjang_Activity" />
         <activity android:name=".activity.Detail_ObatActivity" />
         <activity android:name=".activity.Toko_Obat_Activity" />
         <activity android:name=".activity.Daftar_Activity" />
         <activity android:name=".activity.UtamaActivity" />
+        <activity android:name=".BerandaActivity" />
+        <activity android:name=".KedaiObat_Activity" />
+        <activity android:name=".BiodataActivity" />
+        <activity android:name=".activity.Dompet_Activity"/>
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
@@ -31,5 +47,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+
 
 </manifest>

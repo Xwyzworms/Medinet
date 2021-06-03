@@ -1,118 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Keranjang_Activity">
+    tools:context=".activity.Keranjang_Activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="24dp"
+        app:cardBackgroundColor="@color/Primary_color"
+        android:id="@+id/cardViewKeranajgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgKeranjangPrev"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvKeranjangTitle"
         android:layout_width="82dp"
         android:layout_height="25dp"
         android:text="Keranjang"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/cardViewKeranajgg"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewKeranajgg" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
+        android:paddingBottom="50dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        app:layout_constraintBottom_toTopOf="@+id/cvKeranjang"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvKeranjangTitle" />
 
+    <TextView
+        android:id="@+id/alamatgan"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="@string/alamat"
+        android:layout_marginStart="25dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cvKeranjang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cvKeranjang"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:layout_marginTop="35dp"
+        android:layout_height="450dp"
+        android:paddingBottom="20dp"
+
         app:cardCornerRadius="30dp"
-        app:layout_constraintCircleRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" >
+        app:layout_constraintStart_toStartOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="58dp"
-                android:layout_height="21dp"
-                android:text="Alamat"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginBottom="11dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tvKeranjangAlamat"
-                android:layout_width="385dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
                 android:layout_height="81dp"
-                android:hint="Masukan alamat"
                 android:layout_gravity="center"
                 android:layout_marginBottom="18dp"
+                android:hint="@string/masukan_alamat"
+                app:boxCornerRadiusBottomEnd="23dp"
                 app:boxCornerRadiusBottomStart="23dp"
                 app:boxCornerRadiusTopEnd="23dp"
-                app:boxCornerRadiusTopStart="23dp"
-                app:boxCornerRadiusBottomEnd="23dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:boxCornerRadiusTopStart="23dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/tvKeranjangAlamat"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <Button
+                android:id="@+id/btnKeranjangAlamatGenerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generate Alamat"
+                android:layout_gravity="right"
+                android:background="@drawable/buttonround"
+                android:textSize="12sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Catatan"
-                android:textStyle="bold"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="11dp"
+                android:text="@string/catatan"
                 android:textSize="18sp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginBottom="11dp"/>
+                android:textStyle="bold" />
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tvKeranjangCatatan"
-                android:layout_width="385dp"
-                android:layout_height="107dp"
-                android:hint="Cus Catatan Kamu"
-                android:layout_marginBottom="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/berikan_catatan"
                 app:boxCornerRadiusBottomEnd="23dp"
-                app:boxCornerRadiusTopStart="23dp"
-                app:boxCornerRadiusTopEnd="23dp"
                 app:boxCornerRadiusBottomStart="23dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                app:boxCornerRadiusTopEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/tvKeranjangCatatan"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Metode Bayar"
-                android:textStyle="bold"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:text="@string/metode_bayar"
                 android:textSize="18sp"
-                />
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="1"
-                android:layout_height="wrap_content">
+                android:weightSum="1">
 
                 <RadioGroup
+                    android:id="@+id/RbPembayaran"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -122,60 +169,65 @@
                         android:id="@+id/RbtnKeranjangDompet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dompet Digital"
-                        android:layout_marginLeft="30dp"
-                        android:enabled="true">
-                    </RadioButton>
+                        android:layout_marginStart="30dp"
+                        android:checked="true"
+                        android:text="@string/dompet_digital"/>
+
                     <RadioButton
                         android:id="@+id/RbtnKeranjangTunai"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tunai"
-                        android:layout_marginLeft="30dp"
-                        />
+                        android:layout_marginStart="30dp"
+                        android:text="@string/tunai" />
                 </RadioGroup>
+
                 <TextView
+                    android:id="@+id/tvKeranjangIsiDompet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="RP 100.000"
-                    android:textStyle="bold"
-                    android:textSize="13sp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginRight="60dp"
-                    android:layout_weight="0.9"/>
+                    android:layout_marginEnd="60dp"
+                    android:layout_weight="0.9"
+                    android:text="@string/dompet_default"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="385dp"
-                android:backgroundTint="@color/Primary_color"
+                android:id="@+id/cvKeranjangPesanSekarang"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
+                android:backgroundTint="@color/Primary_color"
                 app:cardCornerRadius="30dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="377dp"
                     android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Pesan Sekarang"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="45dp"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:textColor="@color/white">
-                    </TextView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
+                        android:layout_marginStart="45dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
-                        android:text="Rp 100.000"
-                        android:textColor="@color/white">
-                    </TextView>
+                        android:text="@string/pesan_sekarang"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvKeranjangTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/dompet_default"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -185,3 +237,4 @@
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

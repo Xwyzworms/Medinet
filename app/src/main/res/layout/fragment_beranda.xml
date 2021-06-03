@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/beranda"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -210,6 +211,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvbtnBerandaCovid"
                     app:cardCornerRadius="35dp"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -238,6 +240,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvbtnBerandaDemam"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#8BFA79"
@@ -265,6 +268,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvbtnBerandaSakitKepala"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#FCEE73"
@@ -293,14 +297,15 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvbtnBerandFlu"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#717FFB"
                     app:cardCornerRadius="35dp">
 
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="42dp"
+                        android:layout_height="44dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_flu" />
                 </androidx.cardview.widget.CardView>
@@ -321,6 +326,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvbtnBerandaMaag"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#F684F9"
@@ -349,14 +355,15 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvbtnBerandaLainnya"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     app:cardBackgroundColor="#C4C4C4"
                     app:cardCornerRadius="35dp">
 
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="46dp"
+                        android:layout_height="39dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_baseline_more_vert_24" />
                 </androidx.cardview.widget.CardView>
@@ -385,6 +392,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:id="@+id/recycler_beranda_rekomendasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -412,6 +420,7 @@
             android:id="@+id/recycler_beranda_imun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tx_imun_beranda_title">

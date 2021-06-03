@@ -68,11 +68,11 @@
                 android:layout_marginRight="66dp"
                 android:orientation="vertical">
 
-                <TextView
+                y<TextView
                     android:id="@+id/tx_biodata_berat_ganti"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/berat_angka"
+                    android:text="0.0"
                     android:textColor="@color/Primary_color"
                     android:textSize="36sp" />
 
@@ -96,7 +96,7 @@
                     android:id="@+id/tx_biodata_tinggi_ganti"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tinggi_angka"
+                    android:text="0.0"
                     android:textColor="@color/Primary_color"
                     android:textSize="36sp" />
 
@@ -205,30 +205,10 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <RadioGroup
-                        android:id="@+id/opsi_biodata_jeniskelamin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal"
-                        android:outlineSpotShadowColor="@color/Primary_color">
-
-                        <RadioButton
-                            android:id="@+id/opsi_biodata_lakilaki"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Laki - Laki" />
-
-                        <RadioButton
-                            android:id="@+id/opsi_biodata_perempuan"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Perempuan" />
-                    </RadioGroup>
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/btn_biodata_SimpanBioBio"
                     android:layout_width="149dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
@@ -342,6 +322,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
+                    android:id="@+id/btn_biodata_SimpanPerubahanPassword"
                     android:layout_width="149dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
@@ -417,6 +398,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
+                    android:id="@+id/btn_biodata_SimpanDataPersonal"
                     android:layout_width="149dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
@@ -428,5 +410,15 @@
                     android:textSize="10sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_biodata_HapusAKUN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus Akun"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/crd_biodata_personal" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

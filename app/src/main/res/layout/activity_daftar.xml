@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Primary_color"
     tools:context=".activity.Daftar_Activity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@color/Primary_color"
+    tools:context=".activity.Daftar_Activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="143dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
         android:layout_marginTop="49dp"
         android:textStyle="bold"
         android:layout_marginBottom="10dp"
-        android:text="Hai Selamat Datang"
+        android:text="@string/hai_selamat_datang"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +41,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="303dp"
-        android:layout_height="407dp"
+        android:layout_height="507dp"
         android:layout_marginBottom="20dp"
         android:orientation="vertical"
         app:cardCornerRadius="10dp"
@@ -51,81 +58,87 @@
                 android:layout_width="51dp"
                 android:layout_height="19dp"
                 android:layout_gravity="center"
-                android:text="Daftar"
+                android:text="@string/daftar"
                 android:textSize="18sp" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarNama"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="21dp"
                 android:layout_marginBottom="12dp"
-                android:hint="Nama Lengkap"
+                android:hint="@string/nama_lengkap"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDaftarNama"
+                    android:inputType="text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarTanggalLahir"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="12dp"
-                android:hint="Tanggal Lahir"
+                android:hint="@string/tanggal_lahir"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDaftarTanggalLahir"
+                    android:inputType="date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarEmail"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="12dp"
-                android:hint="Email"
+                android:hint="@string/email"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDaftarEmail"
+                    android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarPassword"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="12dp"
-                android:hint="Password"
+                android:hint="@string/password"
+                app:endIconMode="password_toggle"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDaftarPassword"
+                    android:inputType="textPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
@@ -133,19 +146,21 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/etDaftarPasswordKonfirmasi"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="259dp"
-                android:layout_height="44dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:hint="Ulangi Password"
+                android:hint="@string/ulangi_password"
+                app:endIconMode="password_toggle"
                 app:boxCornerRadiusBottomEnd="10dp"
                 app:boxCornerRadiusBottomStart="10dp"
                 app:boxCornerRadiusTopEnd="10dp"
                 app:boxCornerRadiusTopStart="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDaftarPasswordKonfirmasi"
+                    android:inputType="textPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="12sp" />
@@ -160,15 +175,33 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/buttonround"
                 android:backgroundTint="@color/Primary_color"
-                android:text="Daftar"
+                android:text="@string/daftar"
                 android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="149dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="@string/sudah_punya_akun"
+                        android:paddingStart="35dp"
+                        android:textSize="12sp" >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/btnDaftarMasuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="Login"
+                        android:text="@string/masuk"
+                        android:textSize="12sp"
+                        android:background="@color/white"
+                        android:paddingEnd="30dp"
+                        android:textColor="@color/Primary_color" />
 
-            <TextView
-                android:layout_width="149dp"
-                android:layout_height="16dp"
-                android:layout_gravity="center"
-                android:text="Sudah punya akun?Masuk"
-                android:textSize="12sp" />
+
+                </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -178,7 +211,7 @@
         android:layout_height="16dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Powered By"
+        android:text="@string/support_by"
         android:layout_marginBottom="20dp"
         android:textColor="@color/white"
         android:textSize="12sp"
@@ -200,7 +233,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
             android:src="@drawable/ic_telu" />
 
         <ImageView
@@ -226,3 +259,4 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

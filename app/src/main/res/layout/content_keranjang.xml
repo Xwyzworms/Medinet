@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,7 +20,7 @@
                 android:id="@+id/ivDetailObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@drawable/ic_medi"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,9 +30,9 @@
                 android:id="@+id/tvDetailJudulObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
-                android:text="IMBOOST FORCE 10 KAPLET"
+                android:text="@string/obat_default"
                 android:textSize="13sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/ivDetailObat"
@@ -43,9 +42,9 @@
                 android:id="@+id/tvDetailPenjelasanObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
-                android:text="PerStrip"
+                android:text="@string/jumlah_jual_default"
                 app:layout_constraintStart_toEndOf="@+id/ivDetailObat"
                 app:layout_constraintTop_toBottomOf="@+id/tvDetailJudulObat" />
 
@@ -54,8 +53,8 @@
                 android:id="@+id/tvDetailHargaObat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="RP 80.000"
+                android:layout_marginStart="20dp"
+                android:text="@string/harga_default"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/ivDetailObat"
                 app:layout_constraintTop_toBottomOf="@+id/tvDetailPenjelasanObat" />
@@ -63,33 +62,19 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <Button
-                    android:id="@+id/btnKeranjangKurang"
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/ic_remove_circle_outline_24px_outlined" />
 
                 <EditText
                     android:id="@+id/etKeranjangTotalObat"
                     android:layout_width="77dp"
                     android:layout_height="32dp"
                     android:gravity="center"
-                    android:text="3"
+                    android:text="@string/jumlah_default"
                     android:textSize="11sp" />
-
-
-                <Button
-                    android:id="@+id/btnKeranjangTambah"
-                    android:layout_width="20dp"
-                    android:layout_height="19dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/ic_baseline_add_circle_outline_24" />
 
 
             </LinearLayout>
